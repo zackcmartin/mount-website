@@ -34,4 +34,18 @@
   font-size: 50px;
   margin-top: 10;
 }
+
+.s3 {
+  text-align: center;
+}
+
+#amenity1 {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.s3-images {
+  margin-top: 7%;
+}
 /*# sourceMappingURL=main.css.map */
