@@ -60,6 +60,9 @@
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .s3-images {
@@ -80,5 +83,9 @@
 
 .uni {
   margin-top: 100px;
+}
+
+#uni1 {
+  padding-right: 300px;
 }
 /*# sourceMappingURL=main.css.map */
