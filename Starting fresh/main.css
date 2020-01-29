@@ -2,27 +2,18 @@
   background-color: white;
   background-image: url("../images/clutter.png");
   background-size: cover;
-  border-color: navy;
-  border-width: 30px;
-  border-style: solid;
 }
 
 .p2 {
   background-color: white;
   background-image: url("../images/disorganized.png");
   background-size: cover;
-  border-color: navy;
-  border-width: 30px;
-  border-style: solid;
 }
 
 .p3 {
   background-color: white;
   background-image: url("../images/dis.png");
   background-size: cover;
-  border-color: navy;
-  border-width: 30px;
-  border-style: solid;
 }
 
 #p1 {
@@ -50,10 +41,6 @@
 
 .s3 {
   text-align: center;
-  border: medium;
-  border-color: navy;
-  border-width: 30px;
-  border-style: solid;
 }
 
 #amenity1 {
