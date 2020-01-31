@@ -1,5 +1,5 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
-.s4{
+.s6{
     background-image: url("pics/meetTeamBGfinal.jpg");
     background-size: 100% 100%;
     margin: 0;
@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-.s5{
+.s7{
     background-image: url("pics/mount-lock-logo-rectangle-large.jpg");
     background-size: 100% 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
@@ -155,3 +155,146 @@
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+
+#main {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.animated1{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    
+    .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    }
+    
+
+
+    #sec-1-background {
+        width: 216px;
+        height: 216px;
+        box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+        border-radius: 50%;
+    }
+
+    #image-centered {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        padding: 0;
+        transform: translateY(-50%) translateX(-50%);
+    
+    }
+
+
+
+.title {
+        z-index: 1;
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        position: relative;
+        white-space: nowrap;
+        font-size: 75px;
+        margin: 400px 0px 0px 60px;
+    }
+.p1 {
+  background-color: white;
+  background-image: url("../images/clutter.png");
+  background-size: cover;
+}
+
+.p2 {
+  background-color: white;
+  background-image: url("../images/disorganized.png");
+  background-size: cover;
+}
+
+.p3 {
+  background-color: white;
+  background-image: url("../images/dis.png");
+  background-size: cover;
+}
+
+#p1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10;
+  font-weight: bold;
+  color: black;
+}
+
+#p2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10;
+}
+
+#p3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10;
+  color: black;
+}
+
+.s3 {
+  text-align: center;
+}
+
+#amenity1 {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.s3-images {
+  margin-top: 7%;
+}
+
+.s4 {
+  margin-left: 10%;
+}
+
+.s5 {
+  margin-left: 10%;
+}
+
+#uni-text {
+  width: 300px;
+}
+
+.uni {
+  margin-top: 100px;
+}
+
+#uni1 {
+  padding-right: 300px;
+}
+/*# sourceMappingURL=main.css.map */

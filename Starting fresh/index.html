@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
   <div id="fullPage">
     <div class="section s1">
-      <h1>Unlocking Micromobility</h1>
+      <div id="image-centered">
+        <img src="pics/manscoot.png">
+      </div>
+      <h1 class="title animated1 fadeIn">Unlocking Micromobility</h1>
     </div>
-    <div class="section s2"><h1>Test</h1></div>
-    <div class="section s3"><h1>Test</h1></div>
-    <div class="section s4"><h1 class="header">Meet the team</h1>
+    <div class="section s2">
+      <div class="slide p1">
+        <h1 id="p1">City Clutter</h1>
+      </div>
+      <div class="slide p2">
+        <h1 id="p2">Disorganization</h1>
+      </div>
+      <div class="slide p3">
+        <h1 id="p3">No Regulation</h1>
+      </div>
+    </div>
+    <div class="section s3">
+      <div class="col">
+        <h1>Unlocking Privately Owned Land</h1>
+        <p style="color: gray;font-size: 25px; padding-left: 200px; padding-right: 200px;">Work with Mount to implement
+          a privately owned scooter fleed accessed only be tenants, hotel guests, vacationers, or employees.</p>
+      </div>
+      <div class="row justify-content-around s3-images">
+        <figure>
+          <figcaption style="font-size: 20px;">Scooters</figcaption>
+          <img src="../images/singlescooter.jpg" id="amenity1"
+            style="border-style: solid; border-width: 2px; border-color: black;">
+            <figcaption style="font-size: 15px; width:300px; height: 70px;">Pick from a range of scooters that fit your apartment's needs based on usage, durability, and price</figcaption>
+        </figure>
+        <img src="../images/plus.png" id="plus" style="width: 70px; height:70px; margin-top: 80px;">
+        <figure>
+          <figcaption style="font-size: 20px; margin-top: 15px;">Smart Locks</figcaption><img
+            src="../images/mount-lock-logo-rectangle-large.png" id=""
+            style="margin-top: 10px; height:170px; width:230px;">
+            <figcaption style="font-size: 15px; width:300px; height: 70px; margin-top: 8px">With an integrated API and Bluetooth, our locks bring your scooters online to create a personalized private fleet of scooters</figcaption>
+        </figure>
+        <img src="../images/plus.png" id="plus" style="width: 70px; height:70px; margin-top: 80px;">
+        <figure>
+          <figcaption style="font-size: 20px;">Insurance</figcaption><img src="../images/fleet.jpg" id="amenity1"><figcaption style="font-size: 15px; width:300px; height: 70px;">We provide everything you need to make sure you are covered from liability</figcaption>
+        </figure>
+        <p style="color: gray;font-size: 20px; padding-left: 200px; padding-right: 200px;">Everything you need to run
+          and operate your own scooter fleet - Software and app integration included</p>
+      </div>
+    </div>
+    <div class="section s4">
+      <h1 style="text-align: left; padding-bottom: 50px;">Lock-to Law: What is it and why is it necessary?</h1>
+      <div class="row container">
+        <img class="col" src="../images/dockless.png">
+        <p class="col" style="color: gray; font-size: 20px; margin-top: 10%">A lock-to-law requires all deckles vehicles to install a permanent lock that can lock the scooter/bike/other to
+          a fixed object</p>
+      </div>
+    </div>
+    <div class="section s5">
+      <div class="row">
+        <div class="col uni">
+          <h1>Universities</h1>
+          <p style="color: gray;font-size: 20px; padding-right: 200px;">Install an organized, regulated scooter fleet
+            all managed through Mount</p>
+        </div>
+        <img class="col" src="../images/uni1.jpg" id="uni1">
+      </div>
+    </div>
+    <div class="section s6"><h1 class="header">Meet the team</h1>
       
       <div class="container">
         <div class="row">
@@ -104,7 +166,7 @@
       </div>
     </div>
 
-    <div class="section s5"><h1 class="header">About</h1>
+    <div class="section s7"><h1 class="header">About</h1>
       <div class="aboutPictures">
         <img src="pics/1163.jpg" class="bubblePic">
         <img src="pics/1178.jpg" class="bubblePic">
@@ -131,10 +193,10 @@
   <script>
     new fullpage('#fullPage', {
       autoScrolling: true,
-      navigation: true
-
+      navigation: true,
     });
-  
+
   </script>
 </body>
+
 </html>
