@@ -1,4 +1,160 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
+.s6{
+    background-image: url("pics/meetTeamBGfinal.jpg");
+    background-size: 100% 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande", "Segoe UI";
+}
+
+.header{
+    position: absolute;
+    font-size: 50px;
+    color: #323a4d;
+    border-color: #323a4d;
+    border-bottom: 2px solid currentColor;
+    border-width: 0.85px;
+    height: 70px;
+    top: 3%;
+    left: 5%;
+    font-weight: 150;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande", "Segoe UI";
+}
+
+
+.pic{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-bottom: 15px;
+}
+
+.pic:hover{
+    opacity: .80;
+}
+
+.bioName{
+    text-align: center;
+    color: #323a4d;
+    font-size: 14px;
+    width: 100%;
+}
+
+.bio{
+    text-align: center;
+    color: #323a4d;
+    font-size: 12px;
+    font-weight: lighter;
+    width: 100%;
+}
+
+.s7{
+    background-image: url("pics/mount-lock-logo-rectangle-large.jpg");
+    background-size: 100% 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande", "Segoe UI";
+}
+
+.aboutContent{
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    min-height: 500px;
+    min-width: 500px;
+    top: 15%;
+    left: 2.5%;
+    background-color: white;
+    display: block;
+}
+
+.aboutText{
+    color: #323a4d;
+    font-size: 18px;
+    padding: 2.5%;
+    border-bottom: 1px solid #323a4d;
+}
+
+.aboutPictures{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 30%;
+    height: 80%;
+    display: block;
+}
+
+.bubblePic{
+    width: 75%;
+    border-radius: 50%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+.socialTitle{
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    left: 2.5%;
+    display: block;
+    margin-top: 8%;
+}
+
+.socialText{
+    color: #323a4d;
+    font-size: 24px;
+    font-weight: 150;
+}
+
+.social{
+    position: absolute;
+    display: inline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 6px;
+  }
+
+.fa:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-instagram:hover{
+    color: #323a4d;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram{
+    color: #323a4d;
+    background: rgb(207, 207, 207);
+    
+}
+
+.fa-snapchat-ghost{
+    background: rgb(255, 255, 0);
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 
 #main {
