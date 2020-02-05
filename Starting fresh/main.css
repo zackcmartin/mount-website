@@ -1,4 +1,80 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
+.mainTitle{
+  display: inline;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: #cccccc;
+}
+
+.mainTitle h1{
+  float: left;
+  margin-right: 25px;
+}
+
+.mainTitle img{
+  float: left;
+  margin-top: 12px;
+}
+
+.logo{
+  height: 50px;
+}
+
+.mainText{
+  font-size: 56px;
+  color: #323a4d;
+  font-weight: 150;
+  padding-left: 50px;
+  padding-top: 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Lucida Grande", "Segoe UI";
+}
+
+.nav{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Lucida Grande", "Segoe UI";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #323a4d;
+  width: 800px;
+  height: 80px
+}
+
+.nav li{
+  display: inline;
+  padding: 10px;
+  width: 20%;
+  margin-left: 5%;
+}
+
+.nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #cccccc !important;
+}
+
+
+
+
+.carouselPicture{
+  position: absolute;
+  height: 500px;
+}
+
 .s6{
     background-image: url("pics/meetTeamBGfinal.jpg");
     background-size: 100% 100%;
