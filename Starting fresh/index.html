@@ -18,60 +18,39 @@
 <body>
   <div id="fullPage">
     <div class="section s1">
-      
-      <div class = "container">
-        <div class = "row">
-          <div class = mainTitle>
-            <h1 class="mainText">Mount Lock</h1>
-            <img src="images/mount-lock-logo-rectangle-large 2.png" class="logo">
-            <ul class="nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
+
+        <header>
+          <img src="pics/mount-lock-logo-rectangle-large.png" class="logo">
+          <nav>
+            <ul class = "nav_links">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
               <li><a href="#">About</a></li>
             </ul>
+          </nav>
+          <a class="contact" href="#"><button id="contactButton">Contact</button></a>
+        </header>   
+
+        <div class="slide-container">
+          <span id="slider-image-1"></span>
+          <span id="slider-image-2"></span>
+          <span id="slider-image-3"></span>
+          <div class="image-container">
+            <img src="pics/testImage.jpg" class = "slider-image">
+            <img src="pics/testImage.jpg" class = "slider-image">
+            <img src="pics/testImage.jpg" class = "slider-image">
+          </div>
+          <div class="button-container">
+            <a href="#slider-image-1" class="slider-button"></a>
+            <a href="#slider-image-2" class="slider-button"></a>
+            <a href="#slider-image-3" class="slider-button"></a>
           </div>
         </div>
-          
-        <div class = "row">
-          <div class = "col-lg-12">
 
-            <div id="carouselBox" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselBox" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselBox" data-slide-to="1"></li>
-                <li data-target="#carouselBox" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner carouselPicture">
-                <div class="carousel-item active">
-                  <img class="d-block" src="pics/manscoot.png" alt="First slide">
-                </div>
-                <div class="carousel-item carouselPicture">
-                  <img class="d-block" src="pics/meetTeamBGfinal.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item carouselPicture">
-                  <img class="d-block" src="pics/aboutBGfinal.jpg" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselBox" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselBox" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      
-
-      <h1 class="title animated1 fadeIn">Unlocking Micromobility</h1>
 
     </div>
+
+
     <div class="section s2">
       <div class="slide p1">
         <h1 id="p1">City Clutter</h1>

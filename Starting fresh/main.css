@@ -1,78 +1,108 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
-.mainTitle{
-  display: inline;
+header{
   position: absolute;
-  height: 80px;
+  height: 50px;
+  top: 0px;
   width: 100%;
-  left: 0%;
-  top: 0%;
-  background-color: #cccccc;
-}
-
-.mainTitle h1{
-  float: left;
-  margin-right: 25px;
-}
-
-.mainTitle img{
-  float: left;
-  margin-top: 12px;
+  padding: 30px 10%;
+  background-color: rgb(180, 180, 180);
 }
 
 .logo{
-  height: 50px;
-}
-
-.mainText{
-  font-size: 56px;
-  color: #323a4d;
-  font-weight: 150;
-  padding-left: 50px;
-  padding-top: 8px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    "Lucida Grande", "Segoe UI";
-}
-
-.nav{
   position: absolute;
-  right: 0px;
-  top: 0px;
-  list-style-type: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    "Lucida Grande", "Segoe UI";
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #323a4d;
-  width: 800px;
-  height: 80px
+  left: 20px;
+  top: 10px;
+  cursor: pointer;
+  height: 40px;
 }
 
-.nav li{
-  display: inline;
-  padding: 10px;
-  width: 20%;
-  margin-left: 5%;
+.nav_links{
+  position: absolute;
+  left: 35%;
+  top: 20px;
+  list-style: none;
 }
 
-.nav li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 0px;
+.nav_links li{
+  font-size: 16px;
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.nav_links li a{
   text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: #fff;
 }
 
-.nav a:hover {
-  background-color: #cccccc !important;
+.nav_links li a:hover{
+  color: #323a4d;
 }
 
-
-
-
-.carouselPicture{
+#contactButton{
   position: absolute;
-  height: 500px;
+  top: 10px;
+  right: 20px;
+  font-size: 16px;
+  padding: 9px 25px;
+  background-color: #fff;
+  color: #323a4d;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.slide-container{
+  width: 500px;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container{
+  width: 1500px;
+  height: 40%;
+  position: relative;
+  transition: left 2s;
+  -webkit-transitions: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+}
+
+.slider-image{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  max-width: 500px;
+  max-height: 100%;
+}
+
+.button-container{
+  top: -20px;
+  position: relative;
+}
+
+.slider-button{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#slider-image-1:target ~ .image-container{
+  left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+  left: -800px;
+}
+
+#slider-image-3:target ~ .image-container{
+  left: -1600px
 }
 
 .s6{
