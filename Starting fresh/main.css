@@ -1,4 +1,11 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
+.body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande", "Segoe UI";
+  color: #323a4d;
+  font-weight: 150;
+}
+
 header{
   position: absolute;
   height: 50px;
@@ -8,25 +15,49 @@ header{
   background-color: rgb(180, 180, 180);
 }
 
-.logo{
+.navigation{
   position: absolute;
-  left: 20px;
+  width: 100%;
   top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  text-align: center;
+}
+
+.pic1{
+  flex-grow: 1;
+  vertical-align: middle;
+}
+
+.nav{
+  position: relative;
+  top: 5px;
+  flex-grow: 1;
+  vertical-align: middle;
+  justify-content: center;
+  font-weight: 150;
+}
+
+.cont{
+  flex-grow: 1;
+  vertical-align: middle;
+}
+
+.logo{
+  position: relative;
   cursor: pointer;
   height: 40px;
 }
 
 .nav_links{
-  position: absolute;
-  left: 35%;
-  top: 20px;
   list-style: none;
 }
 
 .nav_links li{
-  font-size: 16px;
+  font-size: 18px;
   display: inline-block;
-  padding: 0px 30px;
+  padding: 0px 35px;
 }
 
 .nav_links li a{
@@ -39,10 +70,8 @@ header{
   color: #323a4d;
 }
 
+
 #contactButton{
-  position: absolute;
-  top: 10px;
-  right: 20px;
   font-size: 16px;
   padding: 9px 25px;
   background-color: #fff;
@@ -53,9 +82,16 @@ header{
   transition: all 0.3s ease 0s;
 }
 
+#contactButton:hover{
+  background-color: #323a4d;
+  color: #fff;
+}
+
+
+
 .slide-container{
-  width: 500px;
-  height: 40%;
+  width: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -63,8 +99,8 @@ header{
 }
 
 .image-container{
-  width: 1500px;
-  height: 40%;
+  width: 1800px;
+  height: 400px;
   position: relative;
   transition: left 2s;
   -webkit-transitions: left 2s;
@@ -76,8 +112,6 @@ header{
   float: left;
   margin: 0px;
   padding: 0px;
-  max-width: 500px;
-  max-height: 100%;
 }
 
 .button-container{
@@ -98,12 +132,42 @@ header{
 }
 
 #slider-image-2:target ~ .image-container{
-  left: -800px;
+  left: -600px;
 }
 
 #slider-image-3:target ~ .image-container{
-  left: -1600px
+  left: -1200px
 }
+
+
+
+
+.s2{
+  background-image: url("pics/meetTeamBGfinal.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.p2Content{
+  width: 40%;
+  left: 2.5%;
+  position: relative;
+}
+
+#p1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #323a4d;
+  border-color: #323a4d;
+  border-bottom: 2px solid currentColor;
+  border-width: 0.85px;
+}
+
+#p2text{
+  color: #323a4d;
+}
+
+
 
 .s6{
     background-image: url("pics/meetTeamBGfinal.jpg");
@@ -129,7 +193,6 @@ header{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
       "Lucida Grande", "Segoe UI";
 }
-
 
 .pic{
     height: 80px;
@@ -342,14 +405,6 @@ header{
   background-color: white;
   background-image: url("../images/dis.png");
   background-size: cover;
-}
-
-#p1 {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 10;
-  font-weight: bold;
-  color: black;
 }
 
 #p2 {
