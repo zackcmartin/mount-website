@@ -50,7 +50,6 @@
 
     </div>
 
-
     <div class="section s2">
       <div class="p2Content">
         <h1 id="p1">City Clutter</h1>
@@ -59,9 +58,6 @@
         
 
     </div>
-
-
-
 
     <div class="section s3">
       <div class="col">
@@ -110,87 +106,57 @@
       </div>
     </div>
     <div class="section s6"><h1 class="header">Meet the team</h1>
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
-            <div class="photo">
-              <a href="#"><img src="pics/madi.png" class="pic"></a>
-            </div>
-            <div class="bioName"><p>Madi Rifkin<br>CEO/Founder</p></div>
-            <div class="bio"><p>2+ years in micromobility industry<br>Developed idea at age 12</p></div>
+      <div class="gridDisplayContent">
+        <div class="largeDisplay">
+          <div class="largePhoto">
+            <img src="pics/madi.png" id="lp">
           </div>
-
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
-            <div class="photo">
-              <a href="#"><img src="pics/kathleen.png" class="pic"></a>
-            </div>
-            <div class="bioName"><p>Kathleen Martin<br>Lead Electrical Engineer</p></div>
-            <div class="bio"><p>Experienced in firmware and curcuit design</p></div>
-          </div>
-
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
-            <div class="photo">
-              <a href="#"><img src="pics/isabel.png" class="pic"></a>
-            </div>
-            <div class="bioName"><p>Isabel Bolger 
-              <br>Lead Software Engineer</p></div>
-            <div class="bio"><p>Worked at Microsoft for 4 summers</p></div>
-          </div>
-
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
-            <div class="photo">
-              <a href="#"><img src="pics/zach.png" class="pic"></a>
-            </div>
-            <div class="bioName"><p>Zack Martin<br>Lead Software Engineer</p></div>
-            <div class="bio"><p>Involved in app dev 3+ years</p></div>
-          </div>
-
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
-            <div class="photo">
-              <a href="#"><img src="pics/selman.png" class="pic"></a>
-            </div>
-            <div class="bioName"><p>Carter Selman<br>Software Engineer</p></div>
-            <div class="bio"><p>Involved in web and app development</p></div>
+          <div class="largeName">
+            <p id="displayName"></p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
+        <div class="gridPic">
+          <div class="colPic">
+
             <div class="photo">
-              <a href="#"><img src="pics/markB.png" class="pic"></a>
+              <button onclick = "submit('madi')" class="picBtn"><img src="pics/madi.png" class="pic"></button>
             </div>
-            <div class="bioName"><p>Mark Bernfeld<br>Advisor</p></div>
+            <div class="photo">
+              <button onclick = "submit('isabel')" class="picBtn"><img src="pics/isabel.png" class="pic"></button>
+            </div>
+            <div class="photo">
+              <button onclick = "submit('zack')" class="picBtn"><img src="pics/zach.png" class="pic"></button>
+            </div>
+
           </div>
 
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
+          <div class="colPic">
             <div class="photo">
-              <a href="#"><img src="pics/markD.png" class="pic"></a>
+              <button onclick = "submit('carter')" class="picBtn"><img src="pics/selman.png" class="pic"></button>
             </div>
-            <div class="bioName"><p>Mark Dockser<br>Advisor</p></div>
+
+            <div class="photo">
+              <button onclick = "submit('markB')" class="picBtn"><img src="pics/markB.png" class="pic"></button>
+            </div>
+
+            <div class="photo">
+              <button onclick = "submit('markD')" class="picBtn"><img src="pics/markD.png" class="pic"></button>
+            </div>
           </div>
 
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
+          <div class="colPic">
             <div class="photo">
-              <a href="#"><img src="pics/paul.png" class="pic"></a>
+              <button onclick = "submit('paul')" class="picBtn"><img src="pics/paul.png" class="pic"></button>
             </div>
-            <div class="bioName"><p>Paul Grazewski<br>Advisor</p></div>
-          </div>
 
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
             <div class="photo">
-              <a href="#"><img src="pics/jon.png" class="pic"></a>
+              <button onclick = "submit('jon')" class="picBtn"><img src="pics/jon.png" class="pic"></button>
             </div>
-            <div class="bioName"><p>Jon McIntyre<br>Advisor</p></div>
-          </div>
 
-          <div class="col-lg-2 col-med-4 col-sm-4 col-xs-4">
             <div class="photo">
-              <a href="#"><img src="pics/helene.png" class="pic"></a>
+              <button onclick = "submit('helene')" class="picBtn"><img src="pics/helene.png" class="pic"></button>
             </div>
-            <div class="bioName"><p>Helene Servillon<br>Advisor</p></div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -207,7 +173,6 @@
           <h3 class="socialText">Find us on social media!</h3>
           <div class="social">
             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>
             
           </div>
@@ -231,6 +196,66 @@
     });
 
   </script>
+
+  <script>
+    function submit(name){ // Input / Output on submission
+      if(name=="madi"){
+        document.getElementById("lp").src="pics/madi.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Madi Rifkin<br>CEO/Founder</p></div><div class='bio'><p>2+ years in micromobility industry<br>Developed idea at age 12</p></div>";
+      }else if(name=="isabel"){
+        document.getElementById("lp").src="pics/isabel.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Isabel Bolger<br>Lead Software Engineer</p></div><div class='bio'><p>Worked at Microsoft for 4 summers</p></div>";
+      }else if(name=="zack"){
+        document.getElementById("lp").src="pics/zach.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Zack Martin<br>Lead Software Engineer</p></div><div class='bio'><p>Involved in app dev 3+ years</p></div>";
+      }else if(name=="carter"){
+        document.getElementById("lp").src="pics/selman.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Carter Selman<br>Software Engineer</p></div><div class='bio'><p>Involved in web and app development</p></div>";
+      }else if(name=="markB"){
+        document.getElementById("lp").src="pics/markB.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Mark Bernfeld<br>Advisor</p></div>";
+      }else if(name=="markD"){
+        document.getElementById("lp").src="pics/markD.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Mark Dockser<br>Advisor</p></div>";
+      }else if(name=="paul"){
+        document.getElementById("lp").src="pics/paul.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Paul Grazewski<br>Advisor</p></div>";
+      }else if(name=="jon"){
+        document.getElementById("lp").src="pics/jon.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Jon McIntyre<br>Advisor</p></div>";
+      }else if(name=="helene"){
+        document.getElementById("lp").src="pics/helene.png"
+        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Helene Servillon<br>Advisor</p></div>";
+      }
+      /*
+        <div class="bioName"><p>Madi Rifkin<br>CEO/Founder</p></div>
+        <div class="bio"><p>2+ years in micromobility industry<br>Developed idea at age 12</p></div>
+
+        <div class="bioName"><p>Isabel Bolger 
+        <br>Lead Software Engineer</p></div>
+        <div class="bio"><p>Worked at Microsoft for 4 summers</p></div>
+
+        <div class="bioName"><p>Zack Martin<br>Lead Software Engineer</p></div>
+        <div class="bio"><p>Involved in app dev 3+ years</p></div>
+
+        <div class="bioName"><p>Carter Selman<br>Software Engineer</p></div>
+        <div class="bio"><p>Involved in web and app development</p></div>
+
+        <div class="bioName"><p>Mark Bernfeld<br>Advisor</p></div>
+
+        <div class="bioName"><p>Mark Dockser<br>Advisor</p></div>
+
+        <div class="bioName"><p>Paul Grazewski<br>Advisor</p></div>
+
+        <div class="bioName"><p>Jon McIntyre<br>Advisor</p></div>
+
+        <div class="bioName"><p>Helene Servillon<br>Advisor</p></div>
+
+      */
+        
+    }
+  </script>
+
 </body>
 
 </html>
