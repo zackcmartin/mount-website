@@ -72,10 +72,11 @@ header{
 #contactButton{
   font-size: 16px;
   padding: 9px 25px;
-  background-color: #fff;
+  background-color: transparent;
   color: #323a4d;
-  border: none;
   border-radius: 50px;
+  border-width: 1px;
+  border-color: #323a4d;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -86,85 +87,81 @@ header{
 }
 
 
-
-.slide-container{
-  width: 600px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  text-align: center;
-}
-
-.image-container{
-  width: 1800px;
-  height: 400px;
+.s1{
   position: relative;
-  transition: left 2s;
-  -webkit-transitions: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-}
-
-.slider-image{
-  float: left;
-  margin: 0px;
-  padding: 0px;
-}
-
-.button-container{
-  top: -20px;
-  position: relative;
-}
-
-.slider-button{
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-#slider-image-1:target ~ .image-container{
-  left: 0px;
-}
-
-#slider-image-2:target ~ .image-container{
-  left: -600px;
-}
-
-#slider-image-3:target ~ .image-container{
-  left: -1200px
+  background: linear-gradient(to right, #fff, transparent), url("pics/testImage.jpg") no-repeat center;
+  background-size: cover;
+  height: 700px;
 }
 
 
+.s1Content{
+  font-weight: 150;
+  color: #323a4d;
+  position: absolute;
+  width: 400px;
+  min-width: 400px;
+  left: 50px;
+  top: 200px;
+  min-height: 200px;
+  height: 300px;
+}
+
+.s1Content h1{
+  font-size: 50px;
+}
+
+#lms1{
+  font-weight: 150;
+  font-size: 18px;
+  color: #323a4d;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #323a4d;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#lms1:hover{
+  background-color: #323a4d;
+  color: #fff;
+}
 
 
 .s2{
-  background-image: url("pics/meetTeamBGfinal.jpg");
+  background: linear-gradient(to left, #fff, transparent), url("pics/meetTeamBGfinal.jpg") no-repeat center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .p2Content{
-  width: 40%;
-  left: 2.5%;
-  position: relative;
+  font-weight: 150;
+  color: #323a4d;
+  position: absolute;
+  width: 400px;
+  min-width: 400px;
+  right: 50px;
+  top: 200px;
+  min-height: 200px;
+  height: 300px;
 }
 
 #p1 {
   font-size: 50px;
   font-weight: bold;
   color: #323a4d;
+  /* Taking out the underline for now
   border-color: #323a4d;
   border-bottom: 2px solid currentColor;
   border-width: 0.85px;
+  */
 }
 
 #p2text{
   color: #323a4d;
 }
-
 
 
 .s6{
@@ -179,11 +176,8 @@ header{
     position: absolute;
     font-size: 50px;
     color: #323a4d;
-    border-color: #323a4d;
-    border-bottom: 2px solid currentColor;
-    border-width: 0.85px;
     height: 70px;
-    top: 3%;
+    top: 80px;
     left: 5%;
 }
 
@@ -225,47 +219,49 @@ header{
     height: 80%;
     min-height: 500px;
     min-width: 500px;
-    top: 15%;
-    left: 2.5%;
-    background-color: white;
+    top: 140px;
+    left: 5%;
     display: block;
+    font-weight: 150;
+    color: #323a4d;
 }
 
 .aboutText{
     color: #323a4d;
     font-size: 18px;
-    padding: 2.5%;
+    padding-top: 18px;
+    padding-bottom: 4px;
     border-bottom: 1px solid #323a4d;
 }
 
 .aboutPictures{
     position: absolute;
-    top: 0%;
+    top: 100px;
     right: 0%;
+    bottom: 10px;
     width: 30%;
-    height: 80%;
     display: block;
 }
 
 .bubblePic{
-    width: 75%;
+    position: relative;
+    width: 60%;
     border-radius: 50%;
-    margin-right: 5%;
-    margin-top: 10%;
+    padding-bottom: 5%;
+    right: -50px;
 }
 
 .socialTitle{
     width: 100%;
     position: absolute;
     height: 30px;
-    left: 2.5%;
     display: block;
-    margin-top: 8%;
+    margin-top: 4px;
 }
 
 .socialText{
     color: #323a4d;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 150;
 }
 
@@ -417,6 +413,17 @@ header{
   text-align: center;
 }
 
+.s3 h1{
+  font-size: 50px;
+  color: #323a4d;
+}
+
+.s3 p{
+  color: #323a4d;
+  font-weight: 150;
+  font-size: 18px;
+}
+
 #amenity1 {
   border-radius: 50%;
   height: 200px;
@@ -450,3 +457,58 @@ header{
   padding-right: 300px;
 }
 /*# sourceMappingURL=main.css.map */
+
+
+
+/* RESIZING */
+
+@media only screen and (max-width: 1200px) {
+  .aboutText{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutPictures{
+    display: none;
+  }
+  .aboutContent{
+    width: 90%;
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_links li {
+    font-size: 14px;
+  }
+  #contactButton{
+    font-size: 14px; 
+  }
+  .socialText{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .nav_links li {
+    display: none;
+  }
+  .logo{
+    left: 30px;
+  }
+  #contactButton{
+    right: 30px;
+  }
+  .aboutText{
+    width: 95%;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutText{
+    font-size: 14px;
+    width: 90%;
+  }
+}
