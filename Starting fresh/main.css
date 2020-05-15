@@ -167,9 +167,75 @@ header{
 .s6{
     width: 100%;
     height: 100%;
+    display: block;
 }
 
-.header{
+.fade-in {
+  opacity: 0;
+  transition: opacity 750ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 500ms ease-in, -webkit-transform 500ms ease-in;
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  transition: opacity 500ms ease-in, transform 500ms ease-in,
+    -webkit-transform 500ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+/* // ! */
+.from-top {
+  grid-column: 2 / 3;
+  -webkit-transform: translateY(-80%);
+  transform: translateY(-80%);
+}
+
+.from-bottom {
+  grid-column: 3 / 4;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.from-top,
+.from-bottom {
+  transition: opacity 500ms ease-in, -webkit-transform 500ms ease-in;
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  transition: opacity 500ms ease-in, transform 500ms ease-in,
+    -webkit-transform 500ms ease-in;
+  opacity: 0;
+}
+
+.from-top.appear,
+.from-bottom.appear {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.Meet-header{
     position: absolute;
     font-size: 50px;
     color: #323a4d;
@@ -177,6 +243,7 @@ header{
     top: 80px;
     left: 5%;
 }
+
 
 .picBtn{
   background-color: transparent;
@@ -187,22 +254,6 @@ header{
   outline: none;
 }
 
-.gridDisplayContent{
-  width: 100%;
-  height: 100%;
-}
-
-.largeDisplay{
-  position: absolute;
-  display: block;
-  top: 150px;
-  width: 35%;
-  height: 60%;
-  left: 5%;
-  border-color: #323a4d;
-  border-right: 2px solid currentColor;
-  border-width: 0.85px;
-}
 
 #lp{
   position: relative;
@@ -214,52 +265,65 @@ header{
   border-radius: 50%;
 }
 
-.largeName{
-  position: relative;
-  margin-left: 20px;
-  margin-top: 20px;
-  color: #323a4d;
-  font-weight: 150;
-  font-size: 20px;
-  float: left;
+.control-button{
+  width: 40px;
+  height: 40px;
+  top: 50%;
 }
 
-.pic{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-right: 40px;
-    margin-top: 40px;
-    overflow: hidden;
+.display-left{
+  position: absolute;
+  left: 0px;
+}
+
+.display-right{
+  position: absolute;
+  right: 0px;
+}
+
+#pic{
+    width: 300px;
+    height: 300px;
+}
+
+.picBtn{
+  position: absolute;
+  left: 100px;
 }
 
 .gridPic{
   position: absolute;
-  display: block;
-  width: 40%;
-  top: 100px;
-  right: 5%;
-}
-
-.colPic{
-  position: relative;
-  display: inline-block;
-  right: -30px;
+  display: inline;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 300px;
 }
 
 .pic:hover{
     opacity: .80;
 }
 
-.bioName{
-    color: #323a4d;
-    font-size: 20px;
+.meetContent{
+  position: absolute;
+  display: block;
+  width: 50%;
+  left: 440px;
+  top: 60px;
+  font-weight: 150;
+  color: #323a4d;
 }
 
-.bio{
-    color: #323a4d;
-    font-size: 14px;
-    font-weight: 150;
+.meetContent h2{
+  font-size: 40px;
+}
+
+.meetContent h3{
+  font-size: 25px;
+}
+
+.meetContent p{
+  font-size: 18px;
 }
 
 .s7{
@@ -267,14 +331,22 @@ header{
     background-size: 100% 100%;
 }
 
-.aboutContent{
+.s7ContentAndPics{
+  display: inline;
+}
+
+.s7 h1{
+  font-size: 50px;
+}
+
+.s7Content{
     position: absolute;
-    width: 60%;
-    height: 80%;
+    width: 40%;
+    height: 40%;
     min-height: 500px;
-    min-width: 500px;
-    top: 140px;
-    left: 5%;
+    min-width: 400px;
+    top: 25%;
+    left: 10%;
     display: block;
     font-weight: 150;
     color: #323a4d;
@@ -282,27 +354,15 @@ header{
 
 .aboutText{
     color: #323a4d;
-    font-size: 18px;
-    padding-top: 18px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #323a4d;
+    font-size: 16px;
+    padding-top: 5px;
 }
 
-.aboutPictures{
+.aboutPicture{
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 0%;
-    bottom: 10px;
-    width: 30%;
-    display: block;
-}
-
-.bubblePic{
-    position: relative;
-    width: 60%;
-    border-radius: 50%;
-    padding-bottom: 5%;
-    right: -50px;
+    height: 60%;
 }
 
 .socialTitle{
@@ -310,7 +370,8 @@ header{
     position: absolute;
     height: 30px;
     display: block;
-    margin-top: 4px;
+    top: 80%;
+    left: 10%;
 }
 
 .socialText{
@@ -357,6 +418,11 @@ header{
     opacity: 94%;
     
     
+}
+
+.fa-linkedin{
+  background: #0e76a8;
+  color: white;
 }
 
 .fa-snapchat-ghost{
@@ -521,6 +587,28 @@ header{
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .meetContent h2{
+    font-size: 35px;
+  }
+  .meetContent h3{
+    font-size: 20px;
+  }
+  .meetContent p{
+    font-size: 16px;
+  }
+  #pic{
+    width: 250px;
+    height: 250px;
+  }
+  .picBtn{
+    left: 70px;
+  }
+  .meetContent{
+    left: 360px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .aboutPictures{
     display: none;
@@ -528,6 +616,37 @@ header{
   .aboutContent{
     width: 90%;
     right: 5%;
+  }
+  .aboutPicture{
+    display: none;
+  }
+  .s7Content{
+    width: 80%;
+    right: 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .meetContent h2{
+    font-size: 30px;
+  }
+  .meetContent h3{
+    font-size: 18px;
+  }
+  .meetContent p{
+    font-size: 14px;
+  }
+  #pic{
+    width: 200px;
+    height: 200px;
+  }
+  .picBtn{
+    left: 60px;
+    top: 80px;
+  }
+  .meetContent{
+    left: 300px;
+    top: 80px;
   }
 }
 
@@ -541,6 +660,7 @@ header{
   .socialText{
     font-size: 16px;
   }
+  
 }
 
 @media only screen and (max-width: 675px) {
@@ -553,15 +673,62 @@ header{
   #contactButton{
     right: 30px;
   }
+  
   .aboutText{
-    width: 95%;
     font-size: 13px;
+  }
+
+  .meetContent h2{
+    font-size: 24px;
+  }
+  .meetContent h3{
+    font-size: 16px;
+  }
+  .meetContent p{
+    font-size: 12px;
+  }
+  #pic{
+    width: 150px;
+    height: 150px;
+    
+  }
+  .picBtn{
+    left: 40px;
+  }
+  .meetContent{
+    left: 240px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .meetContent h2{
+    font-size: 22px;
+  }
+  .meetContent h3{
+    font-size: 14px;
+  }
+  .meetContent p{
+    font-size: 11px;
+  }
+  #pic{
+    width: 100px;
+    height: 100px;
+  }
+  .picBtn{
+    top: 120px;
+    left: 45px;
+  }
+  .meetContent{
+    top: 120px;
+    left: 160px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .aboutText{
-    font-size: 14px;
+    font-size: 12px;
     width: 90%;
   }
+
+  
 }

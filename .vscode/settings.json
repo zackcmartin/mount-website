@@ -3,5 +3,22 @@
     "files.associations": {
         "stdlib.h": "c",
         "time.h": "c"
-    }
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0085b3",
+        "activityBar.activeBackground": "#0085b3",
+        "activityBar.activeBorder": "#ff9fe6",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#ff9fe6",
+        "activityBarBadge.foreground": "#15202b",
+        "titleBar.activeBackground": "#005f80",
+        "titleBar.inactiveBackground": "#005f8099",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBar.background": "#005f80",
+        "statusBarItem.hoverBackground": "#0085b3",
+        "statusBar.foreground": "#e7e7e7"
+    },
+    "peacock.color": "#005F80"
 }

@@ -41,7 +41,7 @@
         
 
       <div class="s1Content">
-        <h1>MountLock</h1>
+        <h1>Mount</h1>
         <h3>A cost-effective, intelligent and secure micromobility solution</h3>
         <p>Build a secure and flexible micromobility solution that is cost effective. Use bikes, E-bikes or kick scooters and launch your fleet in minutes with the best tools on the market.</p>
         <a class = "lmButton" href="#"><button id = "lms1">Learn More</button></a>
@@ -105,80 +105,39 @@
         <img class="col" src="../images/uni1.jpg" id="uni1">
       </div>
     </div>
-    <div class="section s6"><h1 class="header">Meet the team</h1>
-      <div class="gridDisplayContent">
-        <div class="largeDisplay">
-          <div class="largePhoto">
-            <img src="pics/madi.png" id="lp">
-          </div>
-          <div class="largeName">
-            <p id="displayName"></p>
-          </div>
+    <div class="section s6">
+      <h1 class="Meet-header">Meet the team</h1>
+      <div class="gridPic">
+        <button class="control-button display-left fade-in" onclick="plusDivs(-1)">&#10094;</button>
+        <button onclick = "" class="picBtn fade-in"><img src="pics/madi.png" id="pic"></button>
+        <div class="meetContent fade-in">
+          <h2 id="name">Madi Rifkin</p>
+          <h3 id="position">CEO/Founder</h3>
+          <p id="blurb">Involved in the micromobility industry for 2+ years</p>
         </div>
-        <div class="gridPic">
-          <div class="colPic">
-
-            <div class="photo">
-              <button onclick = "submit('madi')" class="picBtn"><img src="pics/madi.png" class="pic"></button>
-            </div>
-            <div class="photo">
-              <button onclick = "submit('isabel')" class="picBtn"><img src="pics/isabel.png" class="pic"></button>
-            </div>
-            <div class="photo">
-              <button onclick = "submit('zack')" class="picBtn"><img src="pics/zach.png" class="pic"></button>
-            </div>
-
-          </div>
-
-          <div class="colPic">
-            <div class="photo">
-              <button onclick = "submit('carter')" class="picBtn"><img src="pics/selman.png" class="pic"></button>
-            </div>
-
-            <div class="photo">
-              <button onclick = "submit('markB')" class="picBtn"><img src="pics/markB.png" class="pic"></button>
-            </div>
-
-            <div class="photo">
-              <button onclick = "submit('markD')" class="picBtn"><img src="pics/markD.png" class="pic"></button>
-            </div>
-          </div>
-
-          <div class="colPic">
-            <div class="photo">
-              <button onclick = "submit('paul')" class="picBtn"><img src="pics/paul.png" class="pic"></button>
-            </div>
-
-            <div class="photo">
-              <button onclick = "submit('jon')" class="picBtn"><img src="pics/jon.png" class="pic"></button>
-            </div>
-
-            <div class="photo">
-              <button onclick = "submit('helene')" class="picBtn"><img src="pics/helene.png" class="pic"></button>
-            </div>
-          </div>
-        </div>
+        <button class="control-button display-right fade-in" onclick="plusDivs(+1)">&#10095;</button>
       </div>
     </div>
 
     <div class="section s7">
-      <h1 class="header">About</h1>
-      <div class="aboutPictures">
-        <img src="pics/1163.jpg" class="bubblePic">
-        <img src="pics/1178.jpg" class="bubblePic">
+    <div class="s7ContentAndPics">
+      <div class="s7Content">
+        <h1>About</h1>
+        <div class="text"><p class="aboutText">The idea for Mount came from the Gates Invention competition Madi competed in when she was twelve. She created a retractable bike lock that was built into the bike. She won the competetion and with it a fully funded patent.<br><br>Today, Mount is a micromobility intermediary. We work with city governments and scooter companies bringing them together through our locks + software solution. We bring order and regulation to an otherwise chaotic market.</p></div>
       </div>
-      <div class="aboutContent">
-        <div class="text"><p class="aboutText">Mount Locks started when our founder, Madi, was 12 years old. She biked around town frequently, but often forget her lock. This forced her to either leave her bike vulnerable to thieves or return home. One day, after misplacing her lock, she formulated the idea for a bike lock that was integrated into the bike. Madi took her idea and ran with it, designing the lock and entering into the Gates Invention Competition at Garland Country Day School. At the end of the program, she was awarded a grant to pursue a patent. <br><br>At the age of 15, Madi was granted two patents for her retracting bike lock. Throughout high school, Madi's passion for entrepreneurship grew. She enrolled at Northeastern University and joined IDEA, a venture accelerator, where she continued to work with her retracting bike lock. Founding Mount Locks in 2018, her idea is now becoming reality. She and the rest of the team have been hard at work creating a product ready for production.</p></div>
-        <div class="socialTitle">
-          <h3 class="socialText">Find us on social media!</h3>
-          <div class="social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            
-          </div>
-        </div>
+      <div class="aboutImageView">
+        <img src="images/scooterCloseUp-removebg-cropped.png" class="aboutPicture slide-in from-right">
+      </div>
+    </div>
+    <div class="socialTitle slide-in from-top">
+      <h3 class="socialText">Find us on social media!</h3>
+      <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/mount-locks/" class="fa fa-linkedin"></a>
         
       </div>
+    </div>
         
     </div>
   </div>
@@ -198,62 +157,123 @@
   </script>
 
   <script>
-    function submit(name){ // Input / Output on submission
-      if(name=="madi"){
-        document.getElementById("lp").src="pics/madi.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Madi Rifkin<br>CEO/Founder</p></div><div class='bio'><p>2+ years in micromobility industry<br>Developed idea at age 12</p></div>";
-      }else if(name=="isabel"){
-        document.getElementById("lp").src="pics/isabel.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Isabel Bolger<br>Lead Software Engineer</p></div><div class='bio'><p>Worked at Microsoft for 4 summers</p></div>";
-      }else if(name=="zack"){
-        document.getElementById("lp").src="pics/zach.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Zack Martin<br>Lead Software Engineer</p></div><div class='bio'><p>Involved in app dev 3+ years</p></div>";
-      }else if(name=="carter"){
-        document.getElementById("lp").src="pics/selman.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Carter Selman<br>Software Engineer</p></div><div class='bio'><p>Involved in web and app development</p></div>";
-      }else if(name=="markB"){
-        document.getElementById("lp").src="pics/markB.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Mark Bernfeld<br>Advisor</p></div>";
-      }else if(name=="markD"){
-        document.getElementById("lp").src="pics/markD.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Mark Dockser<br>Advisor</p></div>";
-      }else if(name=="paul"){
-        document.getElementById("lp").src="pics/paul.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Paul Grazewski<br>Advisor</p></div>";
-      }else if(name=="jon"){
-        document.getElementById("lp").src="pics/jon.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Jon McIntyre<br>Advisor</p></div>";
-      }else if(name=="helene"){
-        document.getElementById("lp").src="pics/helene.png"
-        document.getElementById("displayName").innerHTML = "<div class='bioName'><p>Helene Servillon<br>Advisor</p></div>";
-      }
-      /*
-        <div class="bioName"><p>Madi Rifkin<br>CEO/Founder</p></div>
-        <div class="bio"><p>2+ years in micromobility industry<br>Developed idea at age 12</p></div>
+    // -------------- Fade-in and slide-in Effects -------------- // 
+    const faders = document.querySelectorAll(".fade-in");
+    const sliders = document.querySelectorAll(".slide-in");
 
-        <div class="bioName"><p>Isabel Bolger 
-        <br>Lead Software Engineer</p></div>
-        <div class="bio"><p>Worked at Microsoft for 4 summers</p></div>
-
-        <div class="bioName"><p>Zack Martin<br>Lead Software Engineer</p></div>
-        <div class="bio"><p>Involved in app dev 3+ years</p></div>
-
-        <div class="bioName"><p>Carter Selman<br>Software Engineer</p></div>
-        <div class="bio"><p>Involved in web and app development</p></div>
-
-        <div class="bioName"><p>Mark Bernfeld<br>Advisor</p></div>
-
-        <div class="bioName"><p>Mark Dockser<br>Advisor</p></div>
-
-        <div class="bioName"><p>Paul Grazewski<br>Advisor</p></div>
-
-        <div class="bioName"><p>Jon McIntyre<br>Advisor</p></div>
-
-        <div class="bioName"><p>Helene Servillon<br>Advisor</p></div>
-
-      */
-        
+    const appearOptionsFade = {
+      threshold: 1
     }
+
+    const appearOptionsSlide = {
+      threshold: 0
+    }
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },
+    appearOptionsFade);
+
+    const slideOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },
+    appearOptionsSlide);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    sliders.forEach(slider => {
+      slideOnScroll.observe(slider);
+    });
+
+
+
+    // -------------- Slideshow -------------- // 
+
+    var slideIndex = 0;
+
+    var images = [
+      "pics/madi.png",
+      "pics/zach.png",
+      "pics/isabel.png",
+      "pics/selman.png",
+      "pics/markB.png",
+      "pics/markD.png",
+      "pics/paul.png",
+      "pics/jon.png",
+      "pics/helene.png"
+    ]
+
+    var names = [
+      "Madi Rifkin", 
+      "Zach Martin",
+      "Isabel Bolger",
+      "Carter Selman",
+      "Mark Bernfeld",
+      "Mark Dockser",
+      "Paul Grazewski",
+      "Jon McIntyre",
+      "Helene Servillon"
+    ]
+
+    var position = [
+      "CEO/Founder",
+      "Software Engineer",
+      "Software Engineer",
+      "Software Engineer",
+      "Advisor",
+      "Advisor",
+      "Advisor",
+      "Advisor",
+      "Advisor"
+    ]
+
+    var blurbs = [
+      "2+ years in micromobility industry\nDeveloped idea at age 12",
+      "Involved in app dev 3+ years",
+      "Worked at Microsoft for 4 summers",
+      "Involved in web and app development",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+
+    plusDivs(slideIndex);
+
+    function plusDivs(n) {
+      if(slideIndex + n > images.length - 1){
+        slideIndex = 0;
+      }
+      else if(slideIndex + n < 0){
+        slideIndex = images.length - 1;
+      }
+      else{
+        slideIndex += n;
+      }
+      
+      document.getElementById('pic').src = images[slideIndex];
+      document.getElementById('name').innerText = names[slideIndex];
+      document.getElementById('position').innerText = position[slideIndex];
+      document.getElementById('blurb').innerText = blurbs[slideIndex];
+    }
+        
   </script>
 
 </body>
